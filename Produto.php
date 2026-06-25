@@ -5,12 +5,14 @@ class Produto
     private $codigo;
     private $nome;
     private $preco;
+    private $estoque;
 
-    public function __construct($codigo, $nome, $preco)
+    public function __construct($codigo, $nome, $preco, $estoque)
     {
         $this->codigo = $codigo;
         $this->nome = $nome;
         $this->preco = $preco;
+        $this->estoque = $estoque;
     }
 
     public function getCodigo()
@@ -41,6 +43,16 @@ class Produto
     public function setPreco($preco)
     {
         $this->preco = $preco;
+    }
+
+    public function getEstoque()
+    {
+        return $this->estoque;
+    }
+
+    public function setEstoque($estoque)
+    {
+        $this->estoque = $estoque;
     }
 }
 

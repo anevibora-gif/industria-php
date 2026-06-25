@@ -42,6 +42,11 @@ class Funcionario
     {
         $this->cargo = $cargo;
     }
+
+    public function trabalhar()
+    {
+        return "Funcionário em atividade.";
+    }
 }
 
 ?>
