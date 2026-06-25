@@ -4,11 +4,13 @@ class Funcionario
 {
     private $nome;
     private $matricula;
+    private $cargo;
 
-    public function __construct($nome, $matricula)
+    public function __construct($nome, $matricula, $cargo)
     {
         $this->nome = $nome;
         $this->matricula = $matricula;
+        $this->cargo = $cargo;
     }
 
     public function getNome()
@@ -29,6 +31,16 @@ class Funcionario
     public function setMatricula($matricula)
     {
         $this->matricula = $matricula;
+    }
+
+    public function getCargo()
+    {
+        return $this->cargo;
+    }
+
+    public function setCargo($cargo)
+    {
+        $this->cargo = $cargo;
     }
 }
 
